@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet')
+	html,body
+		min-height 100vh
+		.invalid-feedback
+			color red
+			font-size 11px
+		.container-login-email
+			margin 0 auto
+			height 100%
+			display flex
+			flex-direction column
+			justify-content center
+			align-items center
+
+			.main-login
+				width 100%
+			.flex
+				display flex
+			.window-img
+				display none
+			.el-card
+				height 100vh
+				padding 10%
+				&__body
+					padding 0px
+			.el-alert
+				&--info
+					color black
+					font-family 'Be Vietnam', sans-serif
+					font-weight bold
+					font-size 11px
+					background-color white
+				&__icon
+					content url("../assets/images/play.png")
+
+			.greeting-login
+				p:first-child
+					color #7B2DEB
+					font-size 15px
+					font-family: 'Be Vietnam', sans-serif
+					font-weight bold
+				p:nth-child(2)
+					font-size 1.5em
+					font-family 'Be Vietnam', sans-serif
+					font-weight 900
+					margin 1% 0
+				p:nth-child(3)
+					font-size 12px
+					font-family: 'Be Vietnam', sans-serif
+					font-weight 400
+					margin 0% 0 10% 0
+					a
+						font-weight bold
+						color #7B2DEB
+						cursor pointer
+						text-decoration none
+			.el-form
+				.el-form-item__label
+					font-size 11px
+					font-family 'Be Vietnam', sans-serif
+					font-weight 400
+					margin-bottom 3%
+					line-height 0px
+				.el-input
+					&__inner
+						border-radius 0px
+						outline none
+						border: none
+						border-bottom 1px solid #979797
+					&__inner:focus
+						border-bottom 1px solid #7B2DEB
+				.forgot-pass
+					align-items baseline
+					label
+						margin-left 2%
+						font-size 11px
+						font-family: 'Be Vietnam', sans-serif
+						font-weight bold
+						color #7B2DEB
+						cursor pointer
+				.button-login
+						width 35%
+						margin-top 3%
+						background-color #7B2DEB
+						color white
+						border-radius 20px
+						font-size 11px
+						font-family: 'Be Vietnam', sans-serif
+						font-weight bold
+						margin-bottom 3%
+
+						i
+							margin-left 10%
+
+				.button-social
+					margin-bottom 30%
+					.button-width
+						width 100%
+						height 50px
+						margin 0
+						border-radius 20px
+						font-size 11px
+						margin-bottom 2%
+						font-family: 'Be Vietnam', sans-serif
+						font-weight bold
+					.el-button:nth-child(1)
+						color black
+					.el-button:nth-child(2)
+						background-color #C24B3C
+						color white
+					.el-button:nth-child(3)
+						background-color #3B5998
+						color white
+
+			.footer
+					flex-direction column
+					align-items center
+					.el-button
+						font-family 'Be Vietnam', sans-serif
+						font-weight bold
+						border-radius 20px
+						font-size 11px
+					.footer-image
+						align-items center
+						margin-top 5%
+						p
+							font-size 11px
+							font-family 'Be Vietnam', sans-serif
+							font-weight 400
+
+		@media screen and (min-width:764px)
+			.container-login-email
+				background url('../assets/images/background.png') no-repeat center center fixed
+				background-size cover
+				display flex
+				justify-content space-around
+
+				.main-login
+					height 100vh
+					width 100%
+					display flex
+					justify-content space-around
+					align-items center
+
+					.window-img
+						display inline
+						width 13%
+						p:nth-child(2)
+							color white
+							font-size 27px
+						p:nth-child(3)
+							color white
+							font-size 12px
+					.el-card
+						height 71vh
+						width 30%
+						padding 3%
+						&__body
+							padding 0px
+					.container-card
+						padding 2% 2% 0 2%
+						.button-social
+							display flex
+							flex-direction column
+							margin-bottom 0
+							.button-width
+								font-size 12px
+
+				.el-alert
+					display none
+
+				.footer
+					flex-direction row-reverse
+					justify-content space-around
+					font-family: 'Be Vietnam', sans-serif
+					font-weight 400
+					.el-button
+						font-family: 'Be Vietnam', sans-serif
+						font-weight bold
+						border-radius 20px
+						font-size 11px
+					.footer-image
+						align-items center
+						margin 0
+						p
+							font-size 11px

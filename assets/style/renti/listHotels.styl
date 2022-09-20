@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet')
+@import "global"
+	// Header
+	// 	position static important
+		// background-color white important
+	html, body
+		height 100vh
+		margin 0
+	// .Navbar
+	// 	background-color white
+	// 	position static
+	// 	width 100%
+	// 	.Navbar__Input img
+	// 		content url('../assets/images/logos/logo-buscador.png')
+	// 	&__Link
+	// 		color black !important
+	// 	&__Link:hover
+	// 		color $renti !important
+	// 	.frame:hover
+	// 		border-bottom 2px solid $renti !important
+
+		// .Nav_container
+		// 	background $renti
+		// 	li
+		// 		color white !important
+		// 		border-bottom 1px solid #b1b1b7
+		// 		a
+		// 			text-decoration none
+		// 			color white
+		// .Nav_header
+		// 	&_mobile
+		// 		img
+		// 			content url('../assets/images/logos/logo-buscador.png')
+		// 			margin-right 2rem
+		// 		.svg-inline--fa.fa-w-14
+		// 			color black
+		// .search
+		// 	display flex
+		// 	align-items center
+
+	::placeholder
+		font-family 'Be Vietnam', sans-serif
+	#app
+		font-family 'Be Vietnam', sans-serif
+		-webkit-font-smoothing antialiased
+		-moz-osx-font-smoothing grayscale
+		{flex-column}
+		align-items flex-end
+		background-color white
+		height 100%
+	.container-filters
+		width 100%
+		display flex
+		justify-content space-between
+		padding 0.5% 2% 0.5% 2%
+		button #F0F0F0 auto auto #97979724
+		align-items: center
+		.showMap
+			display none
+		.el-button
+			font 12px normal auto
+			button transparent auto 20px auto
+		.el-button:hover
+			button transparent $renti auto $renti
+	.container-body
+		display flex
+		width 100%
+		&__left
+			position relative
+			area 100% 100%
+			{flex-column}
+			min-height 100vh
+			&-column
+				padding 2% 3%
+				p
+					font-size 17px
+			&-card
+				margin 2% 2%
+			&-slogan
+				display flex
+				align-items center
+				color #666666
+				margin-bottom 2%
+				img
+					margin-right 2%
+					height 25px
+				p
+					font-size 13px
+		.pagination
+			display flex
+			justify-content space-evenly
+			bottom 30px
+			position absolute
+			width 100%
+			.el-button
+				height 45px
+				width 120px
+				color white
+				background #7b2deb
+				border none
+				font-size 14px
+				font-family $font-family
+				font-weight bold
+	.m-1
+		margin-bottom 2%
+	.el-icon-bank-card, .el-icon-truck, .el-icon-location-information.direccion
+		font 20px bold $renti
+	.el-card
+		height 65%
+		padding 1%
+		&__body
+			position relative
+			{flex-column}
+			width 100%
+			.see_details_mobile
+				width 35%
+				position absolute
+				top 25px
+				right 25px
+				button rgba(0, 0, 0, 0.71) #d3d4d6 auto none
+				font 13px 400 white
+			.el-image
+				height 25vh
+			.icons
+				display flex
+				justify-content space-between
+				width 100%
+				align-items center
+				.recommend
+					button $renti auto 20px auto
+					font 12px 400 white
+				.space
+					span
+						font 13px bold #666
+						margin-left 5px
+				.view
+					button none $renti none #CACACA
+				.star
+					button none #FF911E none #CACACA
+			.img-card
+
+				{flex-center}
+				position relative
+				width 45%
+				display none
+				.see_details
+				// display none
+					margin-top 0.5rem
+					position absolute
+					bottom 10px
+					z-index 12
+					button rgba(0,0,0,0.522) #d3d4d6 auto none
+					font 13px 400 white
+					&:hover
+						background
+				.image-mobile
+					display inline
+				.el-carousel
+					// display none
+					area 100% 100%
+					border-radius 20px
+					&__container
+						height 100%
+				.el-carousel__item .el-image
+						display contents
+						font 18px normal #475669
+						opacity 0.75
+						line-height 300px
+						margin 0
+				.el-carousel__item:nth-child(2n)
+					background-color #99a9bf
+				.el-carousel__item:nth-child(2n+1)
+					background-color #d3dce6
+				img
+					height 100%
+			.info-card
+				display flex
+				width 100%
+				align-items baseline
+				margin 3% 0 0 0
+				.info
+					margin-left 2%
+					width 100%
+					// .see_details
+					// // 	background black
+					// // 	color white
+					// 	margin-top 0.5rem
+					// 	position absolute
+					// 	&:hover
+					// 		color
+				h3
+					font-weight bold
+					text-transform uppercase
+					font-size 14px
+					margin-top 4%
+				p:nth-child(2)
+					display inline
+					font-size 12px
+				p:nth-child(3), p:nth-child(4)
+					font 10px normal #808080
+				p:nth-child(5)
+					font 13px bold auto
+					margin 6% 0% 0% 0%
+				.direccion
+					font 15px normal auto
+	#map
+		display none
+		width 45%
+
+@media screen and (min-width:764px)
+	#map
+		display inline
+	.gm-style .gm-style-iw > button
+		color white
+	.gm-style-iw-d
+		overflow hidden !important
+	.gm-style-iw-c
+		padding 0px !important
+	.gm-style img
+		height 16vh
+	.scrollFix
+		img
+			width 100%
+			border none
+			text-align center
+		.infoDiv
+			margin 0% 5%
+			p
+				font-family 'Be Vietnam', sans-serif
+			.price, span
+				color #666666
+			.tittle
+				font-weight bold
+				margin-bottom 2%
+			button
+				button white auto 20px gray
+				padding 6px
+				margin 6px
+				area 30px 30px
+				svg
+					fill #000000
+
+	.container-filters
+		.showMap
+			display inline
+			font-size 12px
+			width 12%
+			display flex
+			justify-content space-evenly
+	.container-body
+		&__left
+			width 65%
+			&-slogan
+				align-items baseline
+			&-card
+				width 95%
+				margin 0 0 2% 0
+				align-self center
+				.el-card
+					height 100%
+					&__body
+						flex-direction row
+						justify-content space-between
+						height 100%
+						padding 10px
+						.icons
+							width 90%
+							margin 0
+						.see_details_mobile
+						.image-mobile
+							display none
+						.info-card
+							width 60%
+							justify-content space-around
+							margin 0px
+							.info
+								width 90%
+							p:nth-child(6)
+								margin 6% 0%
+						.img-card
+							display flex
+							width 38%
+							.el-carousel
+
+							img
+								height -webkit-fill-available
+	// header
+
+	// 	.Nav_container
+	// 		background transparent
+	// 		li
+	// 			color black
+	// 			border-bottom none
+	// 			&:hover
+	// 				border-bottom 2px solid $renti
+	// 				color $renti !important
+	// 			a
+	// 				color black
+	// 				&:hover
+	// 					color $renti !important

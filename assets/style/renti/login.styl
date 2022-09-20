@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet')
+@import "global"	
+
+html,body
+	min-height 100vh
+	.invalid-feedback
+		font 11px 400 $error
+		line-height normal
+		span
+			margin-left 0.5rem
+			font 0.55rem 400 $error
+	.body-login
+		margin 0 auto
+		height 100%
+		{flex-column}
+		{flex-center}
+		.main-window
+			width 100%
+		.flex
+			display flex
+		.window-img
+			display none
+
+		.el-alert
+			&--info
+				font 11px bold black
+				background-color white
+			&__icon
+				content url("../assets/images/play.png")
+		/deep/ .el-card
+			height 100vh
+			&__body
+				padding 0px
+		.container-card
+			background-color white
+			margin 8%
+		.greeting
+			p:first-child
+				font 0.9em bold $renti
+			p:nth-child(2)
+				font 24px 900 black
+			p:nth-child(3)
+				font 0.8em 400 black
+				margin 1% 0 6%
+				strong
+					color $renti
+					cursor pointer
+					a
+						text-decoration none
+						color $renti
+		/deep/ .el-form
+			&-item__label
+				font 11px 400 #606266
+				margin-bottom 3%
+				line-height 0px
+			.el-input
+				&__inner
+					font 0.7rem 400 #606266
+					border-radius 0px
+					outline none
+					border none
+					border-bottom 1px solid $gray
+				&__inner:focus
+					border-bottom 1px solid $renti
+			.forgot-pass
+				justify-content space-between
+				align-items center
+				margin 10% 0 10% 0
+				a
+					text-align right
+					text-decoration none
+					label
+						font 11px bold $renti
+						cursor pointer
+			.button-login
+					button $renti auto 20px none
+					font 11px bold white
+					i
+						margin-left 10%
+		.el-divider--horizontal
+			margin 0px 0 25px
+		.button-social
+			.button-width
+				area 100% 50px
+				margin 0
+				border-radius 20px
+				margin-bottom 2%
+				font 13px bold white
+				span
+					margin-left 1rem
+					span
+						color white
+			.el-button:nth-child(1)
+				background-color #C24B3C
+					
+			.el-button:nth-child(2)
+				background-color #3B5998			
+		.footer
+				margin-top 7%
+				flex-direction column
+				align-items center
+				.el-button
+					font 11px bold #606060
+					border-radius 20px
+				.footer-image
+					align-items center
+					margin-top 5%
+					p
+						font 11px 400 $input
+
+	@media screen and (min-width:764px)
+		.body-login
+			background url('../assets/images/background.png') no-repeat center center fixed
+			background-size cover
+			display flex
+			justify-content space-around
+			.main-window
+				area 100% 100vh
+				display flex
+				justify-content space-around
+				align-items center
+				.window-img
+					display inline
+					width 13%
+					p:nth-child(2)
+						color white
+						font-size 27px
+					p:nth-child(3)
+						color white
+						font-size 12px
+				.el-card
+					area 30% auto
+					.container-card
+						.button-social
+							{flex-column}
+							.button-width
+								font-size 12px
+			.el-alert
+				display none
+			.footer
+				flex-direction row-reverse
+				justify-content space-around
+				font-family: 'Be Vietnam', sans-serif
+				font-weight 400
+				.el-button
+					border-radius 20px
+					font 11px bold auto
+				.footer-image
+					align-items center
+					margin 0
+					p
+						font-size 11px

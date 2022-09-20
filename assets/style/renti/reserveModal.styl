@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet')
+@import "global"
+
+.el-dialog
+	height 100%
+	&__header
+		display none
+	&__body
+		height 100%
+		display flex
+.container_qty_people
+	{flex-column}
+	.el-input__inner
+		border none !important
+	.la
+		display flex
+		justify-content space-between
+		align-items center
+		font 12px 400 $input
+		margin-bottom 5%
+		.el-input-number--medium
+			width 118px
+		.el-input-number__decrease, .el-input-number__increase
+			button #ffffff $renti 6px $renti
+.button-qty-people
+	width 100%
+	button(white !important, black !important, 6px, #EBEEF5)
+	font-size 12px
+.reserve
+	display flex
+	flex-direction column
+	.montoTotal
+		text-align center
+		font-size 18px
+		background-color aquamarine
+	.reserved_button
+		background #7b2deb
+		color white
+		font-family $font-family
+		font-weight bold
+	h3
+		font 1.4em bold $input
+		text-align center
+	p
+		font 15px bold $input
+		text-align left
+		width 100%
+		margin 5% 0% 2%
+	.el-divider--horizontal
+		margin 10px 0px
+	.huesped_button
+		{flex-center}
+		background-color white !important
+		color black !important
+@media screen and (min-width:764px)
+	.reserve
+		width 33%
+		border 1px solid #EBEEF5
+		padding 1%
+		box-shadow 5px 3px 13px #888888
+		h3
+			font-size 13px
+		.pReserve
+			background-color #c0ffea
+			text-align center
+			font-size 18px
+			font-weight bold
+		p
+			font-size 11px
+		.form__date
+			border 1px solid #EBEEF5
+		// .form__date .datePick, .form__date .el-input__inner
+		// 	height 40px
+		.date__div1 .day_style
+			font-size 25px
+		.date__div2, .date__div2 span:nth-child(2)
+			font-size 12px
+		.el-range-editor.el-input__inner
+			width 60%
+
+

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet')
+@import "global"
+.container-img
+	area 157px 250px
+	.el-image
+		border-radius 4%
+		object-fit cover
+		area 160px 250px
+
+.app
+	{flex-center}
+	.preview
+		display none
+	.el-button
+		button $renti white 30px $renti
+		font-size 15px
+		right 20px
+		position absolute
+		border none
+	.demo
+		.glide
+			&__slide
+				cursor pointer
+				.el-image
+					border-radius 4%
+					height 250px
+				.div__image
+					{flex-column}
+					margin-left 5%
+				.Slide__title
+					font 18px bold black
+				.Slide__subtitle
+					font 15px 500 black
+
+@media only screen and (min-width: 768px)
+	.container-img
+		area 234px 250px
+	.app
+		.el-button
+			font-size 25px
+			position static
+			display block
+		.demo
+			.glide
+				&__slide
+					&--active
+						button white #fff 6px white
+						width 300px
+						border none
+						opacity 1
+					.el-image
+						border-radius 4%
+						object-fit cover
+						area 220px 300px
+					.Slide__title
+						margin-top 23%
